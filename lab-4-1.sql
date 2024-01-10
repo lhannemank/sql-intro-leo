@@ -1,7 +1,7 @@
 -- How many lifetime hits does Barry Bonds have?
-SELECT sum(hits)
+SELECT sum(stats.hits)
 FROM stats
-JOIN players ON players.id = stats.player_id
+INNER JOIN players ON players.id = stats.player_id
 WHERE players.first_name = "Barry"
 AND players.last_name = "Bonds";
 
