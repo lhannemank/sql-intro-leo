@@ -8,7 +8,7 @@ JOIN teams ON stats.team_id = teams.id
 WHERE year = "2019" 
 GROUP BY name
 ORDER BY name ASC
-LIMIT 60
+
 -- Expected result:
 --
 -- +-------------------------------+------------+-------------+----------------------+
